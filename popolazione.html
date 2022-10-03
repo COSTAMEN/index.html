@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+ box-sizing: border-box;
+}
+ 
+body {
+ font-family: Arial, Helvetica, sans-serif;
+}
+ 
+/* Style the header */
+header {
+ background-color: GOLD;
+ padding: 30px;
+ text-align: center;
+ font-size: 35px;
+ color: BLACK;
+}
+ 
+/* Create two columns/boxes that floats next to each other */
+nav {
+ float: left;
+ width: 30%;
+ height: 300px; /* only for demonstration, should be removed */
+ background: #ccc;
+ padding: 20px;
+}
+ 
+/* Style the list inside the menu */
+nav ul {
+ list-style-type: none;
+ padding: 0;
+}
+ 
+article {
+ float: left;
+ padding: 20px;
+ width: 70%;
+ background-color: black;
+ height: 300px; /* only for demonstration, should be removed */
+}
+ 
+/* Clear floats after the columns */
+section::after {
+ content: "";
+ display: table;
+ clear: both;
+}
+ 
+/* Style the footer */
+footer {
+ background-color: GREEN;
+ padding: 10px;
+ text-align: center;
+ color: BLACK;
+}
+ 
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+ nav, article {
+   width: 100%;
+   height: auto;
+ }
+}
+</style>
+</head>
+<body>
+ 
+ 
+ 
+<header>
+ <h2>LA POPOLAZIONE</h2>
+</header>
+ 
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="territorio.html">Territorio</a></li>
+  <li><a href="#">Popolazione</a></li>
+  <li><a href="clima.html">Clima</a></li>
+</ul>
+ 
+   <p style="color:black;">La Giamaica è abitata da circa 2.3 milioni di persone di cui il 76% neri-africani, il 15% nero-europei e il rimanente afro-indiani.
+ 
+La popolazione giamaicana è straordinaria mescolanza razziale e culturale, risultato delle diverse colonizzazioni che hanno caratterizzato la storia giamaicana.
+I visi solari hanno caratteristiche fisiche difficili da ritrovare: quasi tutte le razze sono rappresentate - Africana, Inglese, Spagnola, Irlandese, Scozzese, Indiana, Cinese, Tedesca, e Siriana - anche se dominano le influenze Africana e Europea.
+L'Africa domina nei tratti della popolazioni (il 90% dei giamaicani ha la pelle scura), nella cultura, nell'arte, nella cucina, nella lingua.
+L'Europa ha lasciato un segno indelebile nella cultura della Giamaica: i nomi di molti luoghi, nelle leggi, nei sistemi educativi e governativi, nella lingua, nell'architettura e nella religione.
+ 
+</p>
+
+<img src="immagini/giamaicano popolazione.jpg" alt="popolazione">
+   <p style="color:WHITE;">
+ 
+</p>
+ </article>
+</section>
+ 
+<footer>
+ <p><b>JAMAICA</p>
+</footer>
+ 
+</body>
+</html>
+ 

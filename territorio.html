@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+ box-sizing: border-box;
+}
+ 
+body {
+ font-family: Arial, Helvetica, sans-serif;
+}
+ 
+/* Style the header */
+header {
+ background-color: GOLD;
+ padding: 30px;
+ text-align: center;
+ font-size: 35px;
+ color: BLACK;
+}
+ 
+/* Create two columns/boxes that floats next to each other */
+nav {
+ float: left;
+ width: 30%;
+ height: 300px; /* only for demonstration, should be removed */
+ background: #ccc;
+ padding: 20px;
+}
+ 
+/* Style the list inside the menu */
+nav ul {
+ list-style-type: none;
+ padding: 0;
+}
+ 
+article {
+ float: left;
+ padding: 20px;
+ width: 70%;
+ background-color: white;
+ height: 300px; /* only for demonstration, should be removed */
+}
+ 
+/* Clear floats after the columns */
+section::after {
+ content: "";
+ display: table;
+ clear: both;
+}
+ 
+/* Style the footer */
+footer {
+ background-color: GREEN;
+ padding: 10px;
+ text-align: center;
+ color: BLACK;
+}
+ 
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+ nav, article {
+   width: 100%;
+   height: auto;
+ }
+}
+</style>
+</head>
+<body>
+ 
+ 
+ 
+<header>
+ <h2>IL TERRITORIO</h2>
+</header>
+ 
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="#">Territorio</a></li>
+  <li><a href="popolazione.html">Popolazione</a></li>
+  <li><a href="clima.html">Clima</a></li>
+</ul>
+  <article>
+ 
+   <p style="color:black;">La Giamaica, stato insulare caraibico, ha un paesaggio lussureggiante con montagne, foreste pluviali e spiagge con barriere coralline. Molti dei suoi resort all-inclusive sono raggruppati nella zona di Montego Bay, con la sua architettura coloniale britannica, e a Negril, nota per le immersioni subacquee e lo snorkeling.
+</p>
+<img style="width: auto; height: 400px;" src="immagini/territorio.jpg" alt="territorio">
+   <p style="color:WHITE;">
+ 
+</p>
+ </article>
+</section>
+ 
+<footer>
+ <p><b>JAMAICA</p>
+</footer>
+ 
+</body>
+</html>
